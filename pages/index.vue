@@ -4,6 +4,7 @@
     <ul>
       <li v-for="post in blogPosts" :key="post.slug">
         {{ post.title }}
+        {{ post.slug }}
       </li>
     </ul>
   </div>
