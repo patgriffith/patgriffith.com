@@ -1,0 +1,19 @@
+{
+  "updates": [
+    {
+      "title": "Starting from Scratch",
+      "id": "start",
+      "body": "This is a body.",
+      "status": "ongoing"
+    }
+  ],
+  "outro": "Outro text here.",
+  "name": "Lorenzut",
+  "ltvv_start": 0,
+  "intro": "Intro text here.",
+  "date": "2020-05-06T15:37:01.843Z",
+  "status": "ongoing",
+  "title": "Building Lorenzut from 0 to $10k MRR in 6 months.",
+  "description": "Lorenzut is a new CRO idea I had.",
+  "ltvv_now": 0
+}
