@@ -1,10 +1,9 @@
 <template>
   <div class="container">    
-    <h2>From the Blog</h2>
+    <h2>Projects</h2>
     <ul>
-      <li v-for="post in blogPosts" :key="post.slug">
-        {{ post.title }}
-        {{ post.slug }}
+      <li v-for="project in projects" :key="project.slug">
+        <nuxt-link :to="'/' + project.slug">{{ project.title }}</nuxt-link>
       </li>
     </ul>
   </div>
@@ -12,9 +11,17 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'Patrick Lorenzut: Professional Optimist',
+      meta: [
+        { hid: 'description', name: 'description', content: 'My custom description' }
+      ]
+    }
+  },
   computed: {
-    blogPosts() {
-      return this.$store.state.blogPosts;
+    projects() {
+      return this.$store.state.projects;
     },
   },
   components: {
