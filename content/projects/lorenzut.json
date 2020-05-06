@@ -1,4 +1,12 @@
 {
+  "updates": [
+    {
+      "title": "Starting from Scratch",
+      "id": "start",
+      "body": "This is a body.",
+      "status": "ongoing"
+    }
+  ],
   "outro": "Outro text here.",
   "name": "Lorenzut",
   "ltvv_start": 0,
