@@ -1,0 +1,100 @@
+#collage-container{		
+    padding-top: 6em;
+    position: relative;
+    z-index: 3;
+	// box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    background: linear-gradient(to right, $rainbow);    
+    #collage-images{	
+        display: none;
+        img{
+            position: absolute;	
+            opacity: 0;			
+            &#fuck-columbus{						
+                top: 0;
+                right: 0;
+                width: 98%;
+                height: 58%;
+                animation: fadein 1s;
+                animation-fill-mode: forwards;
+            }
+            &#planned-parenthood{			
+                top: 11%;
+                left: 0;
+                width: 49%;
+                height: 51%;
+                animation: fadein 2s;
+                animation-fill-mode: forwards;
+            }
+            &#team-everybody{			
+                bottom: 0;
+                right: 0;
+                width: 48%;
+                height: 41%;
+                animation: fadein 3s;
+                animation-fill-mode: forwards;
+            }
+            &#love-wins{			
+                top: 25%;
+                left: 30%;
+                width: 40%;
+                height: 53%;
+                animation: fadein 3.9s;
+                animation-fill-mode: forwards;
+            }
+            &#black-lives-matter{			
+                bottom: 0;
+                left: 19%;
+                width: 38%;
+                height: 39%;
+                animation: fadein 4.7s;
+                animation-fill-mode: forwards;
+            }
+            &#people-over-profit{
+                right: 0;
+                top: 14%;
+                width: 35%;
+                height: 56%;
+                animation: fadein 5.3s;
+                animation-fill-mode: forwards;
+            }
+        }	
+    }
+    #face{	
+        max-width: 250px;    
+        position: relative;
+        margin-top: 4em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 768px){		
+	#collage-container{
+		height: 90vh;
+        #collage-images{
+            display: block;
+        }
+        #face{
+            position: absolute;
+            left: -3%;
+            bottom: 0;
+            width: 26%;
+            min-width: 280px;
+            height: auto;	
+            max-width: none;
+        }
+	}
+}
+
+@keyframes fadein {
+	0% {	
+		opacity: 0;
+	}
+	90%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

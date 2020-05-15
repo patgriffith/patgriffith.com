@@ -40,3 +40,22 @@ collections:
             name: "status"
             widget: "select"
             options: ["upcoming", "ongoing", "finished"]
+  - name: 'sections'
+    label: 'Sections'
+    format: 'json'
+    folder: 'content/sections'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Intro', name: 'intro', widget: 'markdown' }
+      - { label: 'Outro', name: 'outro', widget: 'markdown', required: false }      
+      - label: "Expands"
+        name: "expands"
+        widget: "list"
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }          
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+          - { label: "Visible", name: "visible", widget: "boolean", default: false}

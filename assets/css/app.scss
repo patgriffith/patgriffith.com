@@ -1,0 +1,56 @@
+@font-face { font-family: 'Glacial Indifference'; src: url("/fonts/glacialindifference-regular-webfont.woff2") format("woff2"), url("/fonts/glacialindifference-regular-webfont.woff") format("woff"); font-weight: normal; font-display: swap; font-style: normal; }
+@font-face { font-family: 'Glacial Indifference'; src: url("/fonts/glacialindifference-italic-webfont.woff2") format("woff2"), url("/fonts/glacialindifference-italic-webfont.woff") format("woff"); font-weight: normal; font-display: swap; font-style: italic; }
+@font-face { font-family: 'Glacial Indifference'; src: url("/fonts/glacialindifference-bold-webfont.woff2") format("woff2"), url("/fonts/glacialindifference-bold-webfont.woff") format("woff"); font-weight: bold; font-display: swap; font-style: normal; }
+
+$rainbow: 
+#000,
+#000 12.5%,
+#735023 12.5%,
+#735023 25%,
+#D22D1F 25%,
+#D22D1F 37.5%,
+#F19035 37.5%,
+#F19035 50%,
+#FCEC4F 50%,
+#FCEC4F 62.5%,
+#357D33 62.5%,
+#357D33 75%,
+#0F53F5 75%,
+#0F53F5 87.5%,
+#6B1B81 87.5%,
+#6B1B81 100%;
+
+body{
+    // font-family: theme('fontFamily.body');
+}
+h1, h2, h3, h4, h5, h6{
+    // font-family: theme('fontFamily.display');
+}
+
+@import 'header';
+@import 'collage';
+
+.home-section{
+    h1{
+        @apply text-5xl font-bold leading-tight mb-10;
+    }
+    h2{
+        @apply text-3xl font-bold mt-40 mb-6;
+    }
+    p{
+        @apply text-xl mb-6;        
+    }
+    a{
+        text-decoration: underline;
+    }
+    ul, ol{
+        @apply text-xl mb-6 ml-6;
+
+    }
+}
+
+.button{
+    padding: 1em 2em;
+    background: theme('colors.purple.default');
+    color: white;
+}
