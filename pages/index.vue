@@ -12,7 +12,9 @@
       </ul>
     </header>
 
-    <HomeSection :data="profit"/>    
+
+    <HomeSection :data="sections('build-with-intention')"/>
+    <HomeSection :data="sections('turn-visitors-into-profit')"/>
     
     <section class="container max-w-xl pt-40 hidden">      
       <h2>Projects</h2>
@@ -28,32 +30,21 @@
 <script>
 import HomeSection from '~/components/HomeSection.vue'
 export default {
-  data () {
-    return {
-     profit: {
-        title: 'Turn visitors into profit.',
-        intro: 'It’s difficult to say the word “funnel” without vomitting a little in your mouth. I understand. And yet, it’s pretty nuts what happens when we’re able to optimize all of these steps.\n\nDouchey marketing jargon or not, 10x is a real thing.',
-        outro: '',
-        expands: [
-          {
-            title: 'Warm up visitors.',
-            content: 'la la info here.',
-            visible: false
-          },
-        ]
-     }
-    }
-  },
   computed: {
     projects() {
       return this.$store.state.projects;
     },
-    sections() {
-      return this.$store.state.sections;
-    },
   },
   components: {
     HomeSection
+  },
+  methods: {
+    sections(slug) {
+      console.log(slug)
+      return this.$store.state.sections.find(obj => {
+        return obj.slug === slug
+      })
+    },
   },
   head() {
     return {

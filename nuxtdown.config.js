@@ -16,7 +16,8 @@ module.exports = {
           permalink: "/:slug",
           isPost: false
         }
-      ]
+      ],
+      
     ]
   };
   
