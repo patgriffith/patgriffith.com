@@ -1,0 +1,26 @@
+{
+  "expands": [
+    {
+      "visible": false,
+      "title": "Turn visitors into leads.",
+      "content": "lorem ipsum"
+    },
+    {
+      "visible": false,
+      "title": "Turn leads into customers.",
+      "content": "lorem"
+    },
+    {
+      "visible": false,
+      "title": "Increase customer value.",
+      "content": "lorem"
+    },
+    {
+      "visible": false,
+      "title": "Reduce churn.",
+      "content": "lorem"
+    }
+  ],
+  "title": "Turn visitors into profit.",
+  "intro": "It’s difficult to say the word “funnel” without vomitting a little in your mouth. I understand. And yet, it’s pretty nuts what happens when we’re able to optimize all of these steps.\n\nDouchey marketing jargon or not, 10x is a real thing."
+}
