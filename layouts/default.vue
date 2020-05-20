@@ -4,6 +4,7 @@
     <Nav/>    
     <nuxt />
     <Footer/>
+    <script async defer src="https://cdn.boei.help/hello.js"></script> 
   </div>
 </template>
 
