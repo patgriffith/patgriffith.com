@@ -1,7 +1,7 @@
 <template>
     <article>
         <h1 class="text-3xl font-bold">{{post.title}}</h1>
-        <nuxtdown-body :body="post.intro"/>
+        <vue-markdown>{{ post.intro }}</vue-markdown>
         
         
         <div v-if="post.updates">
@@ -10,8 +10,8 @@
           </div>
         </div>
         
-        
-        <nuxtdown-body :body="post.outro"/>
+      
+        <vue-markdown>{{ post.intro }}</vue-markdown>
 
 
 

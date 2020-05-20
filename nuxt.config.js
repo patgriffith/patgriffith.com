@@ -28,6 +28,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/markdown.js' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -40,7 +41,8 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    'nuxtdown'
+    'nuxtdown',
+    '@nuxtjs/axios',
   ],
   markdownit: {
     injected: true,

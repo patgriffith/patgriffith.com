@@ -1,7 +1,7 @@
 {
   "name": "lorenzut",
   "version": "1.0.0",
-  "description": "Conversion Rate Optimist",
+  "description": "Ethical Online Business Consultant",
   "author": "Patrick Lorenzut",
   "private": true,
   "scripts": {
@@ -11,9 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/markdownit": "^1.2.9",
+    "babel-runtime": "^6.26.0",
     "nuxt": "^2.0.0",
-    "nuxtdown": "^2.0.3"
+    "nuxtdown": "^2.0.3",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",

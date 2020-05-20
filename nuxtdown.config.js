@@ -17,6 +17,14 @@ module.exports = {
           isPost: false
         }
       ],
+      [
+        "sections",
+        {
+          page: "/about/_slug",
+          permalink: "/about/:slug",
+          isPost: false
+        }
+      ],
       
     ]
   };

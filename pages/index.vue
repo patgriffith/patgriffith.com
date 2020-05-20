@@ -1,20 +1,33 @@
 <template>
   <div>    
     
-    <header>
-      <h1>Hire me to grow<br class="hidden md:block"/> your internet business.</h1>
-      <h2>I use nerdery, empathy, and the scientific method to help people-first businesses increase revenues and reduce costs. Because you shouldn’t have to choose between helping people and making money.</h2>
-      <ul class="list">
-        <li>Hypothesize</li>
-        <li>Implemenet</li>
-        <li>Test</li>
-        <li>Repeat</li>
-      </ul>
+    <header class="container max-w-4xl mt-20">
+      <div class="text-center">
+        <h1 class="text-purple-800 font-bold leading-1 text-300">Hire me to grow<br class="hidden md:block"/> your ethical business.</h1>
+        <h2 class="mt-6 text-110">Hey, I'm Patrick. I use empathy, creativity, and nerdery to solve a wide array of business problems -- ranging from code to design to marketing and beyond. Read on to see how I can help <em>your</em> business... and then <nuxt-link to="/#contact" class="text-green-700 hover:text-black underline">contact me</nuxt-link>. If you want to.</h2>
+      </div>
     </header>
 
 
-    <HomeSection :data="sections('build-with-intention')"/>
-    <HomeSection :data="sections('turn-visitors-into-profit')"/>
+    <section class="mt-40">
+        <div class="container text-center">
+          <iframe width="887" height="499" src="https://www.youtube.com/embed/jizdJBmLvos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto"></iframe>
+        </div>
+    </section>
+
+    <HomeSection :data="sections('values')"/>
+    <Testimonial/>
+    <HomeSection :data="sections('approach')"/>
+    <Testimonial/>
+    <HomeSection :data="sections('skills')"/>
+    <Testimonial/>
+    <HomeSection :data="sections('pricing')"/>
+    <Testimonial/>
+    <HomeSection :data="sections('faq')"/>
+    <Testimonial/>
+    <!-- <HomeSection :data="sections('projects')"/> -->
+    <!-- <Testimonial/> -->
+    <HomeSection :data="sections('contact')"/>
     
     <section class="container max-w-xl pt-40 hidden">      
       <h2>Projects</h2>
@@ -29,6 +42,7 @@
 
 <script>
 import HomeSection from '~/components/HomeSection.vue'
+import Testimonial from '~/components/Testimonial.vue'
 export default {
   computed: {
     projects() {
@@ -36,11 +50,11 @@ export default {
     },
   },
   components: {
-    HomeSection
+    HomeSection,
+    Testimonial
   },
   methods: {
     sections(slug) {
-      console.log(slug)
       return this.$store.state.sections.find(obj => {
         return obj.slug === slug
       })
@@ -49,10 +63,7 @@ export default {
   head() {
     return {
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-      title: 'Patrick Lorenzut: Web Consultant',
-      meta: [
-        { hid: 'description', name: 'description', content: 'My custom description' }
-      ]
+      title: 'Patrick Lorenzut: Ethical Online Business Consultant'
     };
   },
 }

@@ -3,54 +3,89 @@
 @font-face { font-family: 'Glacial Indifference'; src: url("/fonts/glacialindifference-bold-webfont.woff2") format("woff2"), url("/fonts/glacialindifference-bold-webfont.woff") format("woff"); font-weight: bold; font-display: swap; font-style: normal; }
 
 $rainbow: 
-#000,
-#000 12.5%,
-#735023 12.5%,
-#735023 25%,
-#D22D1F 25%,
-#D22D1F 37.5%,
-#F19035 37.5%,
-#F19035 50%,
-#FCEC4F 50%,
-#FCEC4F 62.5%,
-#357D33 62.5%,
-#357D33 75%,
-#0F53F5 75%,
-#0F53F5 87.5%,
-#6B1B81 87.5%,
-#6B1B81 100%;
+theme('colors.black'),
+theme('colors.black') 12.5%,
+theme('colors.yellow.800') 12.5%,
+theme('colors.yellow.800') 25%,
+theme('colors.red.600') 25%,
+theme('colors.red.600') 37.5%,
+theme('colors.orange.400') 37.5%,
+theme('colors.orange.400') 50%,
+theme('colors.yellow.400') 50%,
+theme('colors.yellow.400') 62.5%,
+theme('colors.green.700') 62.5%,
+theme('colors.green.700') 75%,
+theme('colors.blue.700') 75%,
+theme('colors.blue.700') 87.5%,
+theme('colors.purple.800') 87.5%,
+theme('colors.purple.800') 100%;
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
-    // font-family: theme('fontFamily.body');
-}
-h1, h2, h3, h4, h5, h6{
-    // font-family: theme('fontFamily.display');
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    @media screen and (min-width: theme('screens.sm')){
+        font-size: 17px;
+    }
+    @media screen and (min-width: theme('screens.md')){
+        font-size: 18px;
+    }
+    @media screen and (min-width: theme('screens.lg')){
+        font-size: 19px;
+    }
+    @media screen and (min-width: theme('screens.xl')){
+        font-size: 20px;
+    }
 }
 
 @import 'header';
 @import 'collage';
 
-.home-section{
-    h1{
-        @apply text-5xl font-bold leading-tight mb-10;
-    }
-    h2{
-        @apply text-3xl font-bold mt-40 mb-6;
-    }
-    p{
-        @apply text-xl mb-6;        
-    }
-    a{
-        text-decoration: underline;
-    }
-    ul, ol{
-        @apply text-xl mb-6 ml-6;
-
+h2{
+    span{
+        background: linear-gradient(to right, $rainbow);	
+        -webkit-background-clip: text;			
+        -webkit-text-fill-color: transparent;
+        // display: block;
     }
 }
 
-.button{
-    padding: 1em 2em;
-    background: theme('colors.purple.default');
-    color: white;
+.article{
+    p{
+        margin-bottom: 1.4em;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    ul, ol{
+        margin-left: 1.5em;
+        margin-bottom: 1.4em;
+    }
+    ul{
+        list-style: disc;
+    }
+    ol{
+        list-style: decimal;
+    }
+    a{
+        @apply underline text-green-700;
+        &:hover{
+            @apply text-green-900;
+        }
+    }
+}
+
+.text-white .article, .text-white.article{
+    a{
+        @apply text-white;
+        &:hover{
+            @apply text-purple-300;
+        }
+    }
 }

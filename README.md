@@ -1,6 +1,6 @@
 # lorenzut
 
-> Conversion Rate Optimist
+> Ethical Online Business Consultant
 
 ## Build Setup
 
