@@ -1,24 +1,24 @@
 {
     "expands": [
       {
+        "title": "What’s your dream job?",
+        "content": "Thanks for asking!\n\nRight now my M-F schedule is:\n\n- Ideally you’d have a physical office located in downtown Portland, OR, USA that I could work from three days per week, while working remotely 2 other days."
+      },
+      {
+        "title": "Will you work for equity?",
+        "content": "Yes! Happily. And frankly, I find it a little suspicious that most freelancers and consultants *won't* work for equity.\n\nGiven that I’m a risk-tolerant guy with ultra low expenses and zero dependents... there are only three reasons why I wouldn't accept equity.\n\n1. I don't believe in your project's mission.\n2. I don't believe in your project's ability to make money.\n3. I don't believe in you or your team.\n\nIn all three of those cases... I should say no to your project. Right?\n\nSo, yeah, I'm happy to put ~~my~~ your money where my mouth is. I need to be paid a minimum of $2,500/month in order to live comfortably, but am happy to accept some or all of the remaining payment in the form of equity."
+      },
+      {
         "title": "Why don't you have more stuff on GitHub?",
         "content": "I've been a selfish prick most of my life. Only in the past few years have I taken a hard swing toward socialism. And therefore, most of my work I've kept proprietary because of that selfishness. and now, I simply don't like coding enough to "
       },
       {
-        "title": "What are the downsides of working with you?",
-        "content": "answer"
+        "title": "What is your biggest weakness?",
+        "content": "Well ya know --- it's really difficult to admit this --- but I’m just going to be honest and say that my biggest weakness is that I simply care too much.\n\nShitty interview answers aside, I’m aware of many weaknesses. Here they are:\n\n1. **Propensity for existential crisis.** Sounds like a joke. Not a joke."
       },
       {
-        "title": "Will you work for equity?",
-        "content": "Yes! And frankly, I find it a little telling that most freelancers and consultants *won't* work for equity.\n\nGiven that I’m a risk-tolerant guy with ultra low expenses and zero dependents... there are only three reasons why I wouldn't accept equity.\n\n1. I don't believe in your project's mission.\n2. I don't believe in your project's ability to make money.\n3. I don't believe in you or your team.\n\nIn all three of those cases... I should say no to your project. Right?\n\nSo, yeah, I'm happy to put ~~my~~ your money where my mouth is. I need to be paid a minimum of $2,500/month in cash to pay my bills (plus a little buffer), but am happy to accept some or all of the remaining payment in the form of equity."
-      },
-      {
-        "title": "question",
-        "content": "answer"
-      },
-      {
-        "title": "question",
-        "content": "answer"
+        "title": "What’s with the massive gap in your resume?",
+        "content": "I wasn't lying about my propensity for existential crisis (in the answer above).\n\nIn 2013 I propsed to my now ex-wife in Copenhagen, Denmark. "
       },
       {
         "title": "question",
@@ -45,6 +45,5 @@
         "content": "answer"
       }
     ],
-    "title": "FAQ",
-    "intro": "todo"
+    "title": "FAQ"
   }

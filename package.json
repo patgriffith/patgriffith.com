@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/google-analytics": "^2.3.0",
     "@nuxtjs/markdownit": "^1.2.9",
     "babel-runtime": "^6.26.0",
     "nuxt": "^2.0.0",

@@ -8,10 +8,17 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { name: "msapplication-TileColor", content: "#6B46C1" },
+      { name: "theme-color", content: "#6B46C1" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/images/fav/apple-touch-icon.png" },
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/images/fav/favicon-32x32.png" },
+      { rel: "icon", type: "image/png", sizes: "16x16", href: "/images/fav/favicon-16x16.png" },
+      { rel: "manifest", href: "/images/fav/site.webmanifest" },
+      { rel: "mask-icon", href: "/images/fav/safari-pinned-tab.svg", color: "#6B46C1" }
     ]
   },
   /*
@@ -36,6 +43,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Nuxt.js modules
@@ -46,6 +54,13 @@ export default {
   ],
   markdownit: {
     injected: true,
+  },
+  googleAnalytics: {
+    id: 'UA-165327686-1',
+    // debug: {
+    //   enabled: true,
+    //   sendHitTask: true
+    // }
   },
   /*
   ** Build configuration

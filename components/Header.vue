@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="relative" style="z-index: 999999">
         <div id="rainbow"></div>        
         <div id="collage-container">      
             <div id="collage-images">

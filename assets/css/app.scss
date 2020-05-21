@@ -56,6 +56,17 @@ h2{
     }
 }
 
+.section-expand{
+    padding-right: 50px;    
+    span{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-top: -18px;
+        line-height: 1;
+    }
+}
+
 .article{
     p{
         margin-bottom: 1.4em;
@@ -78,6 +89,10 @@ h2{
         &:hover{
             @apply text-green-900;
         }
+    }
+    .link{
+        @extend a;
+        cursor: pointer;
     }
 }
 
