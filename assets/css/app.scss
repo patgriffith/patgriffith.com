@@ -94,6 +94,10 @@ h2{
         @extend a;
         cursor: pointer;
     }
+    .caption{
+        font-size: .8em;
+        @apply text-gray-600 mx-10 -mt-4 mb-10
+    }
 }
 
 .text-white .article, .text-white.article{

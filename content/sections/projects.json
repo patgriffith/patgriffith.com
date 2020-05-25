@@ -2,30 +2,30 @@
     "expands": [      
       {
         "title": "Practicar.mx",
-        "content": ""
+        "content": "",
+        "link": "https://Practicar.mx"
+      },      
+      {
+        "title": "Underpolished.com",
+        "content": "",
+        "link": "https://Underpolished.com"
       },
       {
-        "title": "Pomodoro Dance Party",
-        "content": ""
+        "title": "ForHumanSake.org",
+        "content": "",
+        "link": "https://ForHumanSake.org"
       },
       {
-        "title": "For Human Sake",
-        "content": ""
+        "title": "RemoteFaces.com",
+        "content": "",
+        "link": "https://RemoteFaces.com"
       },
       {
-        "title": "Remote Faces",
-        "content": ""
-      },
-      {
-        "title": "No More Farmers",
-        "content": ""
-      },
-      {
-        "title": "Radically Marginal",
-        "content": ""
+        "title": "RadicallyMarginal.com",
+        "content": "",
+        "link": "https://RadicallyMarginal.com"
       }
     ],
     "title": "Side Projects",
-    "intro": "",
-    "outro": "All of these are projects I've launched in the past year. And all are - and forever will remain - 100% free."
+    "intro": "Despite successfully starting and selling an online company in my younger years… I don’t currently have the emotional bandwidth - or the desire - to be an entrepreneur.\n\nBut I do like to make stuff.\n\nHere are some projects that I’ve made in the past year. FWIW each was designed and developed in less than 72 hours."
   }

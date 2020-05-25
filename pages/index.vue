@@ -3,35 +3,26 @@
     
     <header class="container max-w-4xl mt-20">
       <div class="text-center">
-        <h1 class="text-purple-800 font-bold leading-1 text-300">Hire me to help grow<br class="hidden md:block"/> your ethical business.</h1>
-        <h2 class="mt-6 text-110">Hey, I'm Patrick. I use empathy, creativity, and nerdery to solve a wide array of business problems -- ranging from code to design to marketing and beyond. Read on to see how I can help <em>your</em> business... and then <nuxt-link to="/#contact" class="text-green-700 hover:text-black underline">contact me</nuxt-link>. If you want to.</h2>
+        <h1 class="text-purple-800 font-bold leading-1 text-300">Hire me to code, design,<br/> and market your project.</h1>
+        <h2 class="mt-6 text-110">Hey, I'm Patrick. I use empathy, creativity, and nerdery to solve a wide array of business problems. For ethical teams that put people over profit. Read on to see how I can help <em>your</em> organization... and then <nuxt-link to="/#contact" class="text-green-700 hover:text-black underline">contact me</nuxt-link>. If you want to.</h2>
       </div>
     </header>
 
 
-    <section class="mt-40">
+    <section class="mt-40 hidden">
         <div class="container text-center">
           <iframe width="887" height="499" src="https://www.youtube.com/embed/jizdJBmLvos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto"></iframe>
         </div>
     </section>
 
-    <HomeSection :data="sections('values')"/>
-    <div class="mx-auto max-w-xl -mt-40 mb-40">
-      <div class="max-w-md text-right">
-          <img src="/img/click-to-expand.png" alt="Click to expand." width="212" height="49" class="inline-block mr-12 mt-4"/>
-      </div>
-    </div>
-    <Testimonial/>
+    <!-- <HomeSection :data="sections('values')"/> -->    
     <HomeSection :data="sections('approach')"/>
-    <Testimonial/>
-    <HomeSection :data="sections('skills')"/>
-    <Testimonial/>
-    <HomeSection :data="sections('pricing')"/>
-    <Testimonial/>
-    <HomeSection :data="sections('faq')"/>
-    <Testimonial/>
+    <ClickToExpand/>    
+    <Testimonial :data="testimonials[0]"/>
+    <HomeSection :data="sections('experience')"/>
     <HomeSection :data="sections('projects')"/>
-    <Testimonial/>
+    <Testimonial :data="testimonials[1]"/>
+    <HomeSection :data="sections('faq')"/>
     <HomeSection :data="sections('contact')"/>
     
     <section class="fixed top-0 right-0 left-0 bottom-0 bg-white" v-show="charmingSmile">
@@ -55,10 +46,27 @@
 <script>
 import HomeSection from '~/components/HomeSection.vue'
 import Testimonial from '~/components/Testimonial.vue'
+import ClickToExpand from '~/components/ClickToExpand.vue'
 export default {
   data(){
     return {
-      charmingSmile: false
+      charmingSmile: false,
+      testimonials: [
+        {
+          img: "/img/testies/anthony.png",
+          name: "Anthony Ongaro",
+          position: "BreakTheTwitch.com",
+          website: "https://www.breakthetwitch.com",
+          content: "Dude, you're like a highly skilled ninja assassin operative creator coder. One of the smartest people I know. It's crazy how fast you can build stuff. I really appreciate your help."
+        },
+        {
+          img: "/img/testies/capers.png",
+          name: "Capers Rumph",
+          position: "theoppositeofwar.com",
+          website: "https://theoppositeofwar.com",
+          content: "Patrick is an actual ray of actual light. His energy, enthusiasm, openness, thoughtfulness, and inquisitive nature are exemplary."
+        },
+      ]
     }
   },
   computed: {
@@ -68,7 +76,8 @@ export default {
   },
   components: {
     HomeSection,
-    Testimonial
+    Testimonial,
+    ClickToExpand
   },
   methods: {
     startCharm(){
@@ -83,6 +92,12 @@ export default {
         return obj.slug === slug
       })
     },
+    externalLinks(){
+      for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+        var b = c[a];    
+        b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")  
+      } 
+    }
   },
   head() {
     return {
@@ -91,8 +106,14 @@ export default {
     };
   },
   mounted: function() {
-    let charmingDiv = document.getElementById('charming-smile');
-    charmingDiv.addEventListener('click', this.startCharm);
-}
+    // let charmingDiv = document.getElementById('charming-smile');
+    // charmingDiv.addEventListener('click', this.startCharm);
+    this.externalLinks()
+    window.onclick = function (e) {
+      if (e.target.localName == 'a') {
+          
+      }
+    }
+  }
 }
 </script>
