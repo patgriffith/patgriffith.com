@@ -1,17 +1,61 @@
 <template>
   <div>    
     
-    <header class="container max-w-4xl mt-20">
+    <header class="container max-w-5xl mt-20">
       <div class="text-center">
-        <h1 class="text-purple-800 font-bold leading-1 text-300 max-w-2xl mx-auto">Hire me to design, code, automate and grow your project.</h1>
-        <h2 class="mt-6 text-110">Hey, I'm Patrick. I use empathy, creativity, and nerdery to find and solve a wide array of business problems. For ethical teams that put people over profit. Read on to see how I can help <em>your</em> organization... and then <nuxt-link to="/#contact" class="text-green-700 hover:text-black underline">contact me</nuxt-link>. If you want to.</h2>
+        <h1 class="text-purple-800 font-bold leading-1 text-300 mx-auto max-w-5xl">Hire me to code, design, and copywrite your for-good project.</h1>
+        <h2 class="mt-6 text-110 max-w-3xl mx-auto">Hey, I'm Patrick, a silly human with an affinity for wearing many hats. When not doing manual labor, I solve white collar problems with <a href="/#experience" class="text-green-700 hover:text-black underline">my skills</a>. And, conveniently for you, I need a job 😉. <a href="/#contact" class="text-green-700 hover:text-black underline">Contact me</a> to see how I can help.</h2>        
       </div>
     </header>
 
 
-    <section class="mt-40 hidden">
+    <section class="mt-20">
         <div class="container text-center">
-          <iframe width="887" height="499" src="https://www.youtube.com/embed/jizdJBmLvos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mx-auto"></iframe>
+          <video autoplay loop muted class="mx-auto">
+              <source src="/videos/waiting.mp4" type="video/mp4">
+              <img src="/img/patandandy.jpg" class="rounded"/>
+          </video>
+          <p class="text-gray-500 mt-4 mx-auto max-w-xl">This is me pretending to wait for your call. Probably don't hire me for my videography or acting skills.</p>
+        </div>
+    </section>
+
+
+
+    
+    
+    <section class="pt-32 mt-8">
+        <div class="container">
+            <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"><span>Very wordy tl;dr</span></h2>
+            <div class="article mx-auto max-w-xl mb-10">
+                <vue-markdown>Name's Patrick. You can call me... Patrick. 🤷‍♂️
+
+I have 11 years of professional tech-industry experience spanning the following roles:
+
+- UI/UX Designer
+- Full-Stack Developer (main stack is NuxtJS, VueJS, Lumen, MySQL, NetlifyCMS, TailwindCSS)
+- Machine Learning Engineer (primarily with semantic segmentation)
+- Conversion Rate Optimizer (behavioural design + split tests)
+- Copywriter (style bounces between irreverent and tear-jerking)
+- Search Engine Optimizer (on-site only)
+
+These skills are not rare. But they are rare in combination. This interdisciplinary capabiblity - and more importantly, the knowledge and empathy from having all of these perspectives - is what makes me different from other coders. When we work together you get:
+
+- An empathetic strategist who understands the "why" behind each task. 
+- A purpose-driven and results-driven worker.
+- Someone who looks for shortcuts (whether that's a framework, library, template, or different solution altogether) when appropriate, as speed and cost are two important factors in results-driven engineering.
+- Someone who can manage and execute a web project in its entirety, without you needing to hire people with different specialties.
+- A legitimate team-player who doesn't soak up the glory, doesn't defer the blame, and is otherwise generally not an asshole.
+- A dude who laughs a lot, sees the good in people, and believes that **the good of all is for the good of all**.
+
+Okay, tl;dr complete.
+
+Have I yet swooned you? [Contact me](/#contact), please.
+
+Not convinced? Cool. Many more words to follow.
+
+
+        </vue-markdown> 
+            </div>
         </div>
     </section>
 
@@ -22,7 +66,7 @@
     <HomeSection :data="sections('experience')"/>
     <HomeSection :data="sections('projects')"/>
     <Testimonial :data="testimonials[1]"/>
-    <HomeSection :data="sections('faq')"/>
+    <HomeSection :data="sections('pricing')"/>
     <HomeSection :data="sections('contact')"/>
     
     <section class="fixed top-0 right-0 left-0 bottom-0 bg-white" v-show="charmingSmile">
