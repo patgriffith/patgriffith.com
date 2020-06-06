@@ -3,8 +3,8 @@
     
     <header class="container max-w-5xl mt-20">
       <div class="text-center">
-        <h1 class="text-purple-800 font-bold leading-1 text-300 mx-auto max-w-5xl">Hire me to code, design, and copywrite your for-good project.</h1>
-        <h2 class="mt-6 text-110 max-w-3xl mx-auto">Hey, I'm Patrick, a silly human with an affinity for wearing many hats. When not doing manual labor, I solve white collar problems with <a href="/#experience" class="text-green-700 hover:text-black underline">my skills</a>. And, conveniently for you, I need a job 😉. <a href="/#contact" class="text-green-700 hover:text-black underline">Contact me</a> to see how I can help.</h2>        
+        <h1 class="text-purple-800 font-bold leading-1 text-300 mx-auto max-w-5xl">Software Engineer Generalist Seeks Meaningful Work</h1>
+        <h2 class="mt-6 text-110 max-w-4xl mx-auto">Hey, I'm Patrick. He/him. When not playing outside, I like to leverage <a href="/#experience" class="text-green-700 hover:text-black underline">my white collar skills</a> for social good, with particular interests in health (physical, mental, emotional) and justice (racial, climate, etc) work. Please <a href="/#contact" class="text-green-700 hover:text-black underline">contact me</a> to see how I can help.</h2>        
       </div>
     </header>
 
@@ -25,7 +25,7 @@
     
     <section class="pt-32 mt-8">
         <div class="container">
-            <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"><span>Very wordy tl;dr</span></h2>
+            <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"><span>tl;dr</span></h2>
             <div class="article mx-auto max-w-xl mb-10">
                 <vue-markdown>Name's Patrick. You can call me... Patrick. 🤷‍♂️
 
@@ -38,7 +38,7 @@ I have 11 years of professional tech-industry experience spanning the following 
 - Copywriter (style bounces between irreverent and tear-jerking)
 - Search Engine Optimizer (on-site only)
 
-These skills are not rare. But they are rare in combination. This interdisciplinary capabiblity - and more importantly, the knowledge and empathy from having all of these perspectives - is what makes me different from other coders. When we work together you get:
+These skills are not rare. But they are rare in combination. This interdisciplinary capability - and more importantly, the knowledge and empathy from having all of these perspectives - is what makes me different from other coders. When we work together you get:
 
 - An empathetic strategist who understands the "why" behind each task. 
 - A purpose-driven and results-driven worker.
