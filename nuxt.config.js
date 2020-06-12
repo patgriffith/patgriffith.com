@@ -3,6 +3,11 @@ export default {
   /*
   ** Headers of the page
   */
+
+ serverMiddleware: [
+    '~/servermiddleware/seo.js'
+  ],
+
   head: {
     title: process.env.npm_package_name || '',
     meta: [
