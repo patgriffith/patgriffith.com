@@ -43,7 +43,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/netlify-files'
   ],
   /*
   ** Nuxt.js modules
@@ -52,6 +53,17 @@ export default {
     'nuxtdown',
     '@nuxtjs/axios',
   ],
+  netlifyFiles: {
+    netlifyToml: {
+      redirects: [
+        {
+          from: '/resume',
+          to: 'https://docs.google.com/document/d/1VP9QyA_wGLdSWg6rZHX0NoLZo8nrZv8Z0_QTN08ey5c/edit?usp=sharing',
+          status: 301
+        }
+      ]
+    }
+  },
   markdownit: {
     injected: true,
   },
