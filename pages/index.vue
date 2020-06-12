@@ -3,8 +3,8 @@
     
     <header class="container max-w-5xl mt-20">
       <div class="text-center">
-        <h1 class="text-purple-800 font-bold leading-1 text-300 mx-auto max-w-5xl">Software Engineer Generalist Seeks Meaningful Work</h1>
-        <h2 class="mt-6 text-110 max-w-4xl mx-auto">Hey, I'm Patrick. He/him. When not playing outside, I like to leverage <a href="/#experience" class="text-green-700 hover:text-black underline">my white collar skills</a> for social good, with particular interests in health (physical, mental, emotional) and justice (racial, climate, etc) work. Please <a href="/#contact" class="text-green-700 hover:text-black underline">contact me</a> to see how I can help.</h2>        
+        <h1 class="text-purple-800 font-bold leading-1 text-200 md:text-300 mx-auto max-w-5xl">Software Engineer Generalist Seeks Meaningful Work</h1>
+        <h2 class="mt-6 text-110 max-w-4xl mx-auto">Hey, I'm Patrick, a pragmatic egalitarian - and situational goofball - who likes to combine his <a href="/#experience" class="text-green-700 hover:text-black underline">diverse tech skills</a> for social good. Please <a href="/#contact" class="text-green-700 hover:text-black underline">contact me</a> to see how I can help.</h2>        
       </div>
     </header>
 
@@ -23,7 +23,7 @@
 
     
     
-    <section class="pt-32 mt-8">
+    <section class="pt-32 mt-8 hidden">
         <div class="container">
             <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"><span>tl;dr</span></h2>
             <div class="article mx-auto max-w-xl mb-10">
