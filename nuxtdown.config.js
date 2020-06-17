@@ -12,7 +12,15 @@ module.exports = {
       [
         "projects",
         {
-          page: "/_project",
+          page: "/project/_slug",
+          permalink: "/project/:slug",
+          isPost: false
+        }
+      ],
+      [
+        "words",
+        {
+          page: "/_slug",
           permalink: "/:slug",
           isPost: false
         }

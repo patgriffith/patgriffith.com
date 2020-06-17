@@ -6,40 +6,46 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: 'words'
+    label: 'Words'
+    format: 'json'
+    folder: 'content/words'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:      
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Published', name: 'date', widget: 'datetime' }
+      - { label: 'Last Updated', name: 'updated', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Content', name: 'content', widget: 'markdown' }
+      - { label: "Visible", name: "visible", widget: "boolean", default: true}      
+      - label: "Project"
+        name: "project"
+        widget: "select"
+        required: false
+        options: ["lorenzut", "practicar", "underpolished", "forhumansake", "radicallymarginal", "remotefaces"]
   - name: 'projects'
     label: 'Projects'
     format: 'json'
     folder: 'content/projects'
     create: true
-    identifier_field: name
     slug: '{{slug}}'
     editor:
       preview: false
-    fields:
-      - { label: 'Project Name', name: 'name', widget: 'string' }
+    fields:      
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Update Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Intro', name: 'intro', widget: 'markdown' }
-      - { label: 'Outro', name: 'outro', widget: 'markdown' }
-      - { label: 'Starting LTV/v', name: 'ltvv_start', widget: 'number' }
-      - { label: 'Current LTV/v', name: 'ltvv_now', widget: 'number' }
-      - label: "Status"
-        name: "status"
+      - { label: 'Content', name: 'content', widget: 'markdown' }
+      - { label: 'Link', name: 'link', widget: 'string', required: false }
+      - { label: 'GitHub', name: 'github', widget: 'string', required: false }
+      - { label: "Visible", name: "visible", widget: "boolean", default: true}
+      - { label: "Image", name: "image", widget: "image"}
+      - label: "Project Type"
+        name: "type"
         widget: "select"
-        options: ["upcoming", "ongoing", "finished"]
-      - label: "Updates"
-        name: "updates"
-        widget: "list"
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }          
-          - { label: 'id', name: 'id', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-          - label: "Status"
-            name: "status"
-            widget: "select"
-            options: ["upcoming", "ongoing", "finished"]
+        options: ["personal", "work"]
   - name: 'sections'
     label: 'Sections'
     format: 'json'

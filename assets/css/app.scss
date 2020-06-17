@@ -56,14 +56,10 @@ h2{
     }
 }
 
-.section-expand{
-    padding-right: 50px;    
-    span{
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        margin-top: -18px;
-        line-height: 1;
+.link{
+    @apply underline text-green-700;
+    &:hover{
+        @apply text-green-900;
     }
 }
 
@@ -85,10 +81,7 @@ h2{
         list-style: decimal;
     }
     a{
-        @apply underline text-green-700;
-        &:hover{
-            @apply text-green-900;
-        }
+        @extend .link;
     }
     .link{
         @extend a;
@@ -111,4 +104,30 @@ h2{
 
 #underpolishedchat-button-frame-wrapper{
     bottom: 24px !important;
+}
+
+.expand-wrapper{
+    .expand-title{
+        @apply mx-auto max-w-xl select-none mt-2;
+        a, div{
+            @apply block relative cursor-pointer max-w-md py-4 px-6;
+        }
+        div{
+
+        }
+        a{
+            @apply bg-purple-100;
+            &:hover{
+                @apply bg-purple-800 text-white;
+            }
+        }
+        padding-right: 50px;            
+        span{
+            @apply absolute font-bold text-150;
+            right: 20px;
+            top: 50%;
+            margin-top: -18px;
+            line-height: 1;                
+        }
+    }
 }

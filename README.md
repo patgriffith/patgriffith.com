@@ -1,6 +1,6 @@
 # lorenzut
 
-> Ethical Online Business Consultant
+> Silly Online Business Consultant
 
 ## Build Setup
 

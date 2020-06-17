@@ -8,3 +8,18 @@
     right: 0;
     z-index: 2;
 }
+
+#giggle{
+    z-index: 9;
+    ul{
+        li{
+            @apply mt-2 inline-block;
+            a{
+                @apply inline-block text-purple-800 py-2 px-4 bg-purple-100 rounded;
+                &:hover, &.nuxt-link-exact-active{
+                    @apply bg-purple-800 text-white
+                }
+            }
+        }
+    }
+}

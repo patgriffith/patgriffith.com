@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <div class="mx-auto max-w-xl select-none">
-            <a :href="section.link" v-if="section.link" class="block relative section-expand cursor-pointer max-w-md py-4 px-6 bg-purple-100 hover:bg-purple-800 hover:text-white">
+    <div class="expand-wrapper">
+        <div class="expand-title">
+            <a :href="section.link" v-if="section.link">
                 {{ section.title }}
-                <span class="font-bold text-150">&rarr;</span>
+                <span>&rarr;</span>
             </a>
-            <div v-else class="relative section-expand cursor-pointer max-w-md py-4 px-6" @click="setVisibility" :class="{'bg-purple-800 text-white' : visible, 'bg-purple-100 hover:bg-purple-800 hover:text-white' : !visible}">
+            <div v-else class="" @click="setVisibility" :class="{'bg-purple-800 text-white' : visible, 'bg-purple-100 hover:bg-purple-800 hover:text-white' : !visible}">
                 {{ section.title }}
-                <span class="font-bold text-150">{{ visible ? '-' : '+' }}</span>
+                <span>{{ visible ? '-' : '+' }}</span>
             </div>
         </div>
         <div v-show="visible" class="article border-t-4 border-purple-800 bg-pink-100 p-10 mx-auto max-w-4xl">
