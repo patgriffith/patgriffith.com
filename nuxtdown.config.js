@@ -12,8 +12,8 @@ module.exports = {
       [
         "projects",
         {
-          page: "/project/_slug",
-          permalink: "/project/:slug",
+          page: "/projects/_slug",
+          permalink: "/projects/:slug",
           isPost: false
         }
       ],
