@@ -20,7 +20,6 @@ export default {
   },
   head() {
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
       title: this.post.title,
       meta: [{ hid: 'description', name: 'description', content: this.post.description }]
     };

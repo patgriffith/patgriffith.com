@@ -13,9 +13,6 @@
         </div>
     </section>
 
-
-    <!-- <HomeSection :data="sections('values')"/>     -->
-
     <HomeSection :data="sections('approach')"/>
     <ClickToExpand/>
     <Testimonial :data="$store.state.testimonials[0]"/>
@@ -60,8 +57,7 @@ export default {
     }
   },
   head() {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    return {      
       title: 'Patrick Lorenzut: Silly Online Business Consultant'
     };
   },
