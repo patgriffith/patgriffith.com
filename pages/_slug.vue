@@ -1,17 +1,12 @@
 <template>
   <div>
-    <header class="container max-w-2xl mx-auto mt-20">
-      <h1 class="text-purple-800 font-bold leading-1 text-200">{{ post.title }}</h1>
-      <h2 class="mt-3 text-110 text-purple-800">{{ post.description }}</h2>      
-    </header>
-
-       
+    <Title :h1="post.title" :h2="post.description" />   
     <vue-markdown class="article container max-w-2xl mx-auto mt-20">{{ post.content }}</vue-markdown>
-    
   </div>
 </template>
 
 <script>
+import Title from '~/components/Title.vue'
 export default {
   async asyncData({ params, payload }) {
     if (payload) return { post: payload };
@@ -19,6 +14,9 @@ export default {
       return {
         post: await require(`~/content/words/${params.slug}.json`),
       };
+  },
+  components: {
+    Title,
   },
   head() {
     return {

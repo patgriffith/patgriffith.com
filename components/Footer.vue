@@ -1,8 +1,9 @@
 <template>
-    <footer class="bg-purple-800 mt-56">        
-        <p class="p-6 text-white text-center">Copyright @2020 Patrick Lorenzut</p>
-
-
+    <div>
+        <EmailSignup/>
+        <footer class="bg-purple-800 mt-56">        
+            <p class="p-6 text-white text-center">Copyright @2020 Patrick Lorenzut</p>            
+        </footer>
         <script type="text/javascript">
             window.UnderpolishedTitles = 'Hire me?///Hey. 😗///I miss you. 😍'
         </script>
@@ -15,9 +16,15 @@
             color: '#38A169',
             button_text: 'Contact Me'
         };
-        </script> -->
-        <!-- <script src='https://api.underpolished.com/js/chatwidget.js' async type="text/javascript"></script> -->
-
-
-    </footer>
+        </script>
+        <script src='https://api.underpolished.com/js/chatwidget.js' async type="text/javascript"></script> -->
+    </div>
 </template>
+<script>
+import EmailSignup from '~/components/EmailSignup.vue'
+export default {
+    components: {
+        EmailSignup
+    }
+}
+</script>
