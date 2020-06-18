@@ -1,7 +1,9 @@
 {
-    "title": "Practicar.mx",
-    "description": "test draft description",
-    "content": "A site I built to learn spanish.",
-    "link": "https://practicar.mx",
-    "visible": false
+  "title": "Practicar.mx",
+  "description": "test draft description",
+  "content": "A site I built to learn spanish.",
+  "link": "https://practicar.mx",
+  "visible": false,
+  "image": "/img/practicar.png",
+  "type": "work"
 }
