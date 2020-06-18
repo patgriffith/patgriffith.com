@@ -3,19 +3,16 @@
     
     <Title :h1="h1" :h2="h2" />
 
-
-    <!-- <HomeSection :data="sections('projects')"/> -->
-
     <div class="container mt-24">
       <div class="max-w-md md:max-w-6xl mx-auto mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <a v-for="project in projects" :key="project.slug" target="_blank" class="col-span-1 relative rounded border border-1 block hover:bg-yellow-200" :href="project.link">
+        <nuxt-link v-for="project in projects" :key="project.slug" class="col-span-1 relative rounded border border-1 block hover:bg-yellow-200" :to="'/projects/' + project.slug + '#giggle'">
           <img :src="'/img/designs/' + project.slug +'.png'" :alt="project.title" class="rounded-t border-b">
           <span class="block py-2 px-4">
             <strong>{{ project.title }}</strong>
             <p class="-mt-1">{{ project.description }}</p>
 
           </span>
-        </a>
+        </nuxt-link>
       </div>
        
 
@@ -43,31 +40,10 @@ export default {
     HomeSection,
     Title
   },
-  methods: {
-    sections(slug) {
-      return this.$store.state.sections.find(obj => {
-        return obj.slug === slug
-      })
-    },
-    externalLinks(){
-      for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
-        var b = c[a];    
-        b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")  
-      } 
-    }
-  },
   head() {
     return {
       title: 'Websites that Patrick Lorenzut built.'
     };
-  },
-  mounted: function() {
-    this.externalLinks()
-    window.onclick = function (e) {
-      if (e.target.localName == 'a') {
-          
-      }
-    }
   }
 }
 </script>
