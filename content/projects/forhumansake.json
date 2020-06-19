@@ -14,6 +14,7 @@
         }
     ],
     "visible": true,
+    "mine": true,
     "image": "/img/thumbs/forhumansake.png",
     "updated": "2020-06-18T17:52:38.012Z"
 }
