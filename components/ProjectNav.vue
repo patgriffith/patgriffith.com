@@ -7,16 +7,10 @@
                     <nuxt-link v-if="$route.params.update" :to="'/' + project.slug + '#giggle'" class="link font-bold mt-4 bg-yellow-200">&larr; Back to project overview.</nuxt-link>
                 </div>
                 <div class="col-span-2" :class="{'text-center md:col-span-5 -mt-16' : posts.length === 0 }">                    
-                    <h2 v-html="subtitle" class="mb-4"></h2>
-                    <a v-if="project.link" class="bg-purple-200 hover:bg-gray-400 text-purple-800 font-bold text-80 py-2 px-4 rounded inline-flex items-center mb-2 mr-2" target="_blank" :href="project.link">                            
-                        <span>Website</span>
-                    </a>
-                    <a v-if="project.ios" class="bg-purple-200 hover:bg-gray-400 text-purple-800 font-bold text-80 py-2 px-4 rounded inline-flex items-center mb-2 mr-2" target="_blank" :href="project.ios">                            
-                        <span>iOS App</span>
-                    </a>
-                    <a v-if="project.github" class="bg-purple-200 hover:bg-gray-400 text-purple-800 font-bold text-80 py-2 px-4 rounded inline-flex items-center" target="_blank" :href="project.github">                            
-                        <span>Source Code</span>
-                    </a>
+                    <h2 v-html="subtitle" class="mb-4"></h2>                                                    
+                    <a v-for="link in project.links" :key="link.title" class="bg-purple-200 hover:bg-gray-400 text-purple-800 font-bold text-80 py-2 px-4 rounded inline-flex items-center mb-2 mr-2" target="_blank" :href="link.url">                            
+                        <span>{{ link.title }} &rarr;</span>
+                    </a>                    
                 </div>
                 <div class="col-span-2 md:col-span-3 font-bold" v-if="posts.length > 0">
                     <div class="article">

@@ -3,8 +3,21 @@
   "subtitle": "A weekend build while taking Spanish classes in CDMX.",
   "description": "test draft description",
   "content": "A site I built to learn spanish.",
-  "link": "https://practicar.mx",
-  "image": "/img/practicar.png",
+  "image": "/img/thumbs/practicar.png",
+  "links": [
+    {
+        "title": "Website",
+        "url": "https://practicar.mx"
+    },
+    {
+        "title": "Frontend Source Code",
+        "url": "https://github.com/patricklorenzut/Practicar-Frontend"
+    },
+    {
+      "title": "API Source Code",
+      "url": "https://github.com/patricklorenzut/Practicar-API"
+    }
+  ],
   "visible": true,
   "type": "work",
   "updated": "2020-06-18T17:52:38.012Z"

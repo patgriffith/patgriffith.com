@@ -4,7 +4,7 @@
         <nuxt-link v-for="project in projects" :key="project.slug" class="col-span-1 relative block hover:bg-yellow-200" :to="project.slug + '#giggle'">          
           <span class="block py-2 px-4">
             <p class="mb-1"><strong>{{ project.title }}</strong></p>
-            <img v-if="project.image" :src="project.image"/>
+            <img v-if="project.image" :src="project.image" :alt="project.title" class="border-2 border-purple-800"/>
             <p class="mt-3 leading-3">{{ project.subtitle }}</p>
             <strong class="block text-200 -mt-2">&rarr;</strong>
           </span>
