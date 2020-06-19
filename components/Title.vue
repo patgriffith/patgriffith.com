@@ -8,6 +8,6 @@
 </template>
 <script>
 export default {
-    props: ['h1', 'h2']
+    props: ['h1', 'h2', 'project']
 }
 </script>

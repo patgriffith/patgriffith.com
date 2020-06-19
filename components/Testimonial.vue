@@ -4,9 +4,9 @@
             <div class="flex-none">
                 <img :src="data.img" class="rounded-md ml-8 mb-8 md:ml-0 md:mb-0" :alt="data.name" width="125" height="125"/>
             </div>
-            <div class="ml-8 flex-grow article">
+            <div class="ml-8 flex-grow">
                 <p><em>{{ data.content }}</em></p>
-                <p>{{ data.name }}<br/><a :href="data.website"><strong>{{ data.position }}</strong></a></p>
+                <p class="mt-6">{{ data.name }}<br/><a :href="data.website"><strong>{{ data.position }}</strong></a></p>
             </div>
         </div>
     </div>

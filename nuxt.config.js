@@ -6,14 +6,15 @@ export default {
       const path = require('path');
       var projects = fs.readdirSync('./content/projects').map(file => {
         return {
-          route: `/projects/${path.parse(file).name}`, // Return the slug
+          route: `/${path.parse(file).name}`, // Return the slug
           payload: require(`./content/projects/${file}`),
         };
       });
       var words = fs.readdirSync('./content/words').map(file => {
+        let payload = require(`./content/words/${file}`)
         return {
-          route: `/${path.parse(file).name}`, // Return the slug
-          payload: require(`./content/words/${file}`),
+          route: '/' + (typeof payload.project !== 'undefined' ? payload.project : 'words') + `/${path.parse(file).name}`, // Return the slug
+          payload: payload,
         };
       });
       let pages = projects.concat(words)

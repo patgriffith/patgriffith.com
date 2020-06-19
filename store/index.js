@@ -1,5 +1,5 @@
 export const state = () => ({
-    projects: [],
+    projects: [],    
     words: [],
     sections: [],
     testimonials: [
@@ -40,18 +40,21 @@ export const actions = {
             res.slug = key.slice(2, -5);
             return res;
         });
-        await commit('setProjects', projects);
+        let sortedProjects = await projects.sort((a, b) => {
+            return new Date(b.updated) - new Date(a.updated)
+        })
+        await commit('setProjects', sortedProjects);
         
         let writingFiles = await require.context('~/content/words/', false, /\.json$/);        
-        var words = writingFiles.keys().map(key => {            
+        let words = writingFiles.keys().map(key => {            
             let res = writingFiles(key);
             res.slug = key.slice(2, -5);
             return res;
-        });
-        words = words.filter(function(word) {
-            return word.visible == true;
-        });
-        await commit('setWords', words);
+        });   
+        let sortedWords = await words.sort((a, b) => {
+            return new Date(b.updated) - new Date(a.updated)
+        })
+        await commit('setWords', sortedWords);
 
         let sectionFiles = await require.context('~/content/sections/', false, /\.json$/);        
         let sections = sectionFiles.keys().map(key => {            

@@ -37,10 +37,12 @@ collections:
       preview: false
     fields:      
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Last Updated', name: 'updated', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Content', name: 'content', widget: 'markdown' }
       - { label: 'Link', name: 'link', widget: 'string', required: false }
       - { label: 'GitHub', name: 'github', widget: 'string', required: false }
+      - { label: 'iOS App', name: 'ios', widget: 'string', required: false }
       - { label: "Visible", name: "visible", widget: "boolean", default: true}
       - { label: "Image", name: "image", widget: "image", required: false}
       - label: "Project Type"

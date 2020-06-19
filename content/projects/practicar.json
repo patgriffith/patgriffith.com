@@ -1,9 +1,11 @@
 {
   "title": "Practicar.mx",
+  "subtitle": "A weekend build while taking Spanish classes in CDMX.",
   "description": "test draft description",
   "content": "A site I built to learn spanish.",
   "link": "https://practicar.mx",
-  "visible": false,
   "image": "/img/practicar.png",
-  "type": "work"
+  "visible": true,
+  "type": "work",
+  "updated": "2020-06-18T17:52:38.012Z"
 }

@@ -3,18 +3,15 @@
     
     <Title :h1="h1" :h2="h2" />
     <div class="container max-w-xl mt-20">        
-      <div v-for="word in words" :key="word.slug" class="mb-6">
-          <nuxt-link :to="word.slug + '#giggle'" class="font-bold link">
-              {{ word.title }}
-              <span>&rarr;</span>
-          </nuxt-link>
-      </div>
+      <WordsList :words="words"/>       
+      <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4 mt-40"><span>Project Updates</span></h2>
+      <WordsList :words="updates"/>  
     </div>
-
   </div>
 </template>
 
 <script>
+import WordsList from '~/components/WordsList.vue'
 import HomeSection from '~/components/HomeSection.vue'
 import Title from '~/components/Title.vue'
 export default {
@@ -26,10 +23,18 @@ export default {
   },
   computed: {
     words() {
-      return this.$store.state.words;
+      return this.$store.state.words.filter(function(word) {
+        return (word.visible && typeof word.project === 'undefined');
+      });
     },
+    updates() {
+      return this.$store.state.words.filter(function(word) {
+        return (word.visible && typeof word.project !== 'undefined');
+      });
+    }
   },
   components: {
+    WordsList,
     HomeSection,
     Title
   },

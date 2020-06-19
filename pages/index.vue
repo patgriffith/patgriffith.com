@@ -18,6 +18,7 @@
     <Testimonial :data="$store.state.testimonials[0]"/>
     <HomeSection :data="sections('experience')"/>
     <HomeSection :data="sections('projects')"/>
+    <PortfolioGrid />
     <Testimonial :data="$store.state.testimonials[1]"/>
     <HomeSection :data="sections('pricing')"/>
     <HomeSection :data="sections('contact')"/>
@@ -30,6 +31,7 @@ import Title from '~/components/Title.vue'
 import HomeSection from '~/components/HomeSection.vue'
 import Testimonial from '~/components/Testimonial.vue'
 import ClickToExpand from '~/components/ClickToExpand.vue'
+import PortfolioGrid from '~/components/PortfolioGrid.vue'
 export default {
   data(){
     return {
@@ -41,7 +43,8 @@ export default {
     Title,
     HomeSection,
     Testimonial,
-    ClickToExpand
+    ClickToExpand,
+    PortfolioGrid
   },
   methods: {
     sections(slug) {
