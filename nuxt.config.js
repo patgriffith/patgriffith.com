@@ -1,14 +1,5 @@
 export default {
   mode: 'universal',
-  // router: {
-  //   scrollBehavior: function (to, from, savedPosition) {
-  //     if (false && to.hash) {
-  //         return {selector: to.hash}
-  //     } else {
-  //         return {x: 0, y: 0}
-  //     }
-  //   }
-  // },
   generate: {
     routes: function() {
       const fs = require('fs');

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProjectNav :project="project" :title="post.title" :subtitle="post.description" />
+    <ProjectNav :project="project" :post="post" />
     <div class="container max-w-2xl mx-auto mt-10">      
       <vue-markdown class="article">{{ post.content }}</vue-markdown>
     </div>

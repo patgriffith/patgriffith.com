@@ -2,7 +2,7 @@
     "title": "Lorenzut",
     "subtitle": "A quirky site for finding meaningful work.",
     "description": "I just want to do something meaningful, pay my bills, and take care of my health all at the same time. Is that so much to ask?!?!?!?",
-    "content": "I value ridiculous laughs, tomfoolery, ballyhoo, attempting to frown while skipping, existential crises, type 2 fun, eco-friendly glitter, naked bike rides, ultimate frisbee, almond butter, expertly-roasted ‘mallows, bunny ears, funkadelic tunes, shower thoughts, and stories of romance.\n\nOr in short: I'm a happy-go-lucky ball of silliness.\n\nPity for my bank account I also value human rights, equity, inclusivity, the environment, future generations, human connection, minimalism, et al.\n\nBut lest I get ahead of myself, this about page isn’t really about career stuff. Click here for that.",
+    "content": "",
     "links": [
         {
             "title": "Website",
@@ -14,7 +14,6 @@
         }
     ],
     "visible": true,
-    "mine": true,
-    "image": "/img/thumbs/lorenzut.png",
+    "image": "/img/uploads/lorenzut.png",
     "updated": "2020-06-25T17:52:38.012Z"
 }

@@ -1,7 +1,7 @@
 {
     "title": "Pickmonitor",
     "subtitle": "Sold in 2017, this is where I first tried on so many different hats.",
-    "description": "Designed product, built site, built brand, built an API, wrote copy, fostered community, ran split tests, provided support, managed servers, wrote scrapers, managed affiliates, setup email drip campaigns, built automation, etc etc etc. Sold in 2017 as it’s misaligned with my current values and interests.",
+    "description": "",
     "content": "",
     "links": [
         {
@@ -10,7 +10,6 @@
         }
     ],
     "visible": true,
-    "mine": false,
-    "image": "/img/thumbs/pickmonitor.png",
+    "image": "/img/uploads/pickmonitor.png",
     "updated": "2020-06-21T17:52:38.012Z"
 }

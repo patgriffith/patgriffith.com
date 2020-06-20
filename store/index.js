@@ -1,7 +1,7 @@
 export const state = () => ({
     projects: [],    
     words: [],
-    sections: [],
+    sections: [],    
     testimonials: [
         {
           img: "/img/testies/anthony.png",
@@ -29,7 +29,7 @@ export const mutations = {
     },
     setSections(state, list) {
         state.sections = list;
-    },
+    }
 };
 
 export const actions = {

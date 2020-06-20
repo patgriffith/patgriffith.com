@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
+media_folder: static/img/uploads
 public_folder: /img
 
 collections:
@@ -42,7 +42,6 @@ collections:
       - { label: 'Content', name: 'content', widget: 'markdown' }
       - { label: "Visible", name: "visible", widget: "boolean", default: true}
       - { label: "Image", name: "image", widget: "image", required: false}
-      - { label: "Mine", name: "mine", widget: "boolean", default: true}
       - label: "Links"
         name: "links"
         widget: "list"

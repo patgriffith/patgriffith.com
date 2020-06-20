@@ -1,7 +1,7 @@
 <template>
     <div class="relative" style="z-index: 10">
         <div id="rainbow"></div>        
-        <div id="collage-container">      
+        <div id="collage-container" v-if="showHeader">      
             <div id="collage-images">
                 <img src="/img/values/fuck-columbus.png" id="fuck-columbus"/>
                 <img src="/img/values/planned-parenthood.png" id="planned-parenthood"/>
@@ -14,3 +14,17 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    data(){
+        return {
+            showHeader: true
+        }
+    },
+    watch: {
+        $route(to, from) {
+            this.showHeader = false
+        }
+    }
+}
+</script>

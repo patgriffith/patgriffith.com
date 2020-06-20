@@ -3,9 +3,7 @@
     
     <Title :h1="h1" :h2="h2" />
     <div class="container max-w-xl mt-20">        
-      <WordsList :words="words"/>       
-      <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4 mt-40"><span>Project Updates</span></h2>
-      <WordsList :words="updates"/>  
+      <WordsList :words="words"/>
     </div>
   </div>
 </template>
@@ -24,12 +22,7 @@ export default {
   computed: {
     words() {
       return this.$store.state.words.filter(function(word) {
-        return (word.visible && typeof word.project === 'undefined');
-      });
-    },
-    updates() {
-      return this.$store.state.words.filter(function(word) {
-        return (word.visible && typeof word.project !== 'undefined');
+        return (word.visible);
       });
     }
   },
