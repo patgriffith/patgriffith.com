@@ -6,7 +6,7 @@
         <span class="col-span-1 relative">
             <p class="mb-1"><strong>{{ project.title }}</strong></p>
             <p class="mt-3 leading-3">{{ project.description }}</p>
-            <strong class="block text-150">&rarr;</strong>
+            <strong class="block text-150 ">&rarr;</strong>
         </span>
     </nuxt-link>
 </template>

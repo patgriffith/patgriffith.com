@@ -3,8 +3,8 @@
         <div class="container mt-24">
             <div class="max-w-md md:max-w-4xl mx-auto mb-4 grid grid-cols-2 md:grid-cols-5 gap-16">
                 <div class="col-span-2 md:col-span-5 text-center">
-                    <h1 class="text-300 font-bold text-purple-800 leading-1 mb-2">{{ post ? post.title : project.title + ": " + project.subtitle }}</h1>  
-                    <h2 v-if="post" v-html="post.description"></h2>                  
+                    <h1 class="text-200 md:text-300 font-bold text-purple-800 leading-1 mb-2">{{ post ? post.title : project.title + ": " + project.subtitle }}</h1>  
+                    <h2 v-if="post" class="text-110 max-w-3xl mx-auto" v-html="post.description"></h2>                  
                 </div>
                 <div class="col-span-2" :class="{'text-center md:col-span-5 -mt-16' : posts.length === 0 }">               
                     <div v-if="post">
@@ -14,7 +14,7 @@
                         </nuxt-link>
                     </div>
                     <div v-else>     
-                        <h2 v-html="project.description" class="mb-4"></h2>                                                    
+                        <h2 v-html="project.description" class="mb-4 text-110 max-w-3xl mx-auto"></h2>                                                    
                         <a v-for="link in project.links" :key="link.title" class="bg-purple-200 hover:bg-gray-400 text-purple-800 font-bold text-80 py-2 px-4 rounded inline-flex items-center mb-2 mr-2" target="_blank" :href="link.url">                            
                             <span>{{ link.title }} &rarr;</span>
                         </a>

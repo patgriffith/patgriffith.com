@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-32 mt-8" :id="data.slug">
+    <section class="pt-24 md:pt-32 mt-8" :id="data.slug">
         <div class="container">
             <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"><span>{{ data.title}}</span></h2>
             <div v-if="data.intro" class="article mx-auto max-w-xl mb-10">

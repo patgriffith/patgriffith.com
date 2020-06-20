@@ -1,7 +1,7 @@
 {
     "title": "Remote Faces",
     "subtitle": "Watch your coworkers pick their noses.",
-    "description": "",
+    "description": "Always open to ways I can add silliness to my life, this little project let me play with getUserMedia, using your computer's webcam to capture animated GIFs of you while you pretend to work.",
     "content": "",
     "links": [
         {

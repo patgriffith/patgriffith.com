@@ -26,7 +26,7 @@ collections:
         name: "project"
         widget: "select"
         required: false
-        options: ["lorenzut", "practicar", "underpolished", "forhumansake", "radicallymarginal", "remotefaces"]
+        options: ["lorenzut", "luxonis", "dealcatcher", "practicar", "underpolished", "forhumansake", "radicallymarginal", "remotefaces"]
   - name: 'projects'
     label: 'Projects'
     format: 'json'

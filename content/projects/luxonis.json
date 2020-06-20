@@ -1,9 +1,15 @@
 {
     "title": "Luxonis",
-    "subtitle": "Machine Learning, Computer Vision, and More",
-    "description": "",
+    "subtitle": "Machine Learning and Computer Vision",
+    "description": "Narcissism notwithstanding, I’m the fullest stack engineer that you’ll ever meet. Adding to my frontend dev, backend dev, iOS dev, and design skills... here I got to do Machine Learning Engineering, Computer Vision, and even some firmware development.",
     "content": "",
     "visible": true,
+    "links": [
+        {
+            "title": "View Project Summary",
+            "url": "https://bst.aero/wp-content-uploads-2019-09-onboard-intelligence-release-pdf/"
+        }        
+    ],
     "image": "/img/uploads/luxonis.png",
     "updated": "2020-06-22T17:52:38.012Z"
 }
