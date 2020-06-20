@@ -1,6 +1,12 @@
 <template>
   <div>
     <Title :h1="post.title" :h2="post.description" />   
+    <div class="max-w-4xl mx-auto mt-20">
+      <div v-if="post.image">
+          <img :src="post.image" class="mx-auto border-8 border-purple-100" :alt="post.title"/>
+      </div>
+      <hr v-else class=""/>
+    </div>
     <vue-markdown class="article container max-w-2xl mx-auto mt-20">{{ post.content }}</vue-markdown>
   </div>
 </template>
