@@ -11,12 +11,15 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/google-analytics": "^2.3.0",
     "@nuxtjs/markdownit": "^1.2.9",
+    "@nuxtjs/toast": "^3.3.0",
     "babel-runtime": "^6.26.0",
     "nuxt": "^2.0.0",
     "nuxt-interpolation": "^0.2.2",
+    "nuxt-validate": "^1.0.1",
     "prismjs": "^1.20.0",
     "vue-markdown": "^2.2.4",
     "vue-prism-component": "^1.2.0"

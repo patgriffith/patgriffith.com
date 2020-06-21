@@ -73,6 +73,9 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
+    '@nuxtjs/toast',
+    'nuxt-validate',    
     'nuxt-interpolation'
   ],
   netlifyFiles: {
@@ -85,6 +88,10 @@ export default {
         }
       ]
     }
+  },
+  toast: {
+    position: 'top-center',
+    duration: 4000
   },
   markdownit: {
     injected: true,
