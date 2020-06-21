@@ -50,13 +50,14 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/assets/css/app.scss',
+    '@/assets/css/app.scss'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/markdown.js' }
+    { src: '~/plugins/markdown.js' },
+    { src: "~/plugins/prism.js", ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

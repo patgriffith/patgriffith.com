@@ -2,7 +2,7 @@
   <div>    
     <ProjectNav :project="project" />
     <div class="container max-w-2xl mx-auto mt-10">
-      <vue-markdown class="article">{{ project.content }}</vue-markdown>
+      <Words :content="project.content" />
     </div>      
   </div>
 </template>
@@ -10,6 +10,7 @@
 <script>
 import Title from '~/components/Title.vue'
 import ProjectNav from '~/components/ProjectNav.vue'
+import Words from '~/components/Words.vue'
 export default {
   computed: {
     project() {
@@ -20,7 +21,8 @@ export default {
     }
   },
   components: {
-    ProjectNav
+    ProjectNav,
+    Words
   },
   head() {
     return {

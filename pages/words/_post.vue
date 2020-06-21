@@ -7,12 +7,15 @@
       </div>
       <hr v-else class=""/>
     </div>
-    <vue-markdown class="article container max-w-2xl mx-auto mt-20">{{ post.content }}</vue-markdown>
+    <div class="container max-w-2xl mx-auto mt-20">
+      <Words :content="post.content" />    
+    </div>
   </div>
 </template>
 
 <script>
 import Title from '~/components/Title.vue'
+import Words from '~/components/Words.vue'
 export default {
   computed: {
     post() {
@@ -24,6 +27,7 @@ export default {
   },
   components: {
     Title,
+    Words
   },
   head() {
     return {
