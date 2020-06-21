@@ -11,7 +11,7 @@
             </div>
         </div>
         <div v-show="visible" class="article border-t-4 border-purple-800 bg-pink-100 p-10 mx-auto max-w-4xl">
-            <vue-markdown>{{ section.content }}</vue-markdown>
+            <vue-markdown v-interpolation :source="section.content"></vue-markdown>
         </div>
     </div>
 </template>

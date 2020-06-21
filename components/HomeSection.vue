@@ -3,7 +3,7 @@
         <div class="container">
             <h2 class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"><span>{{ data.title}}</span></h2>
             <div v-if="data.intro" class="article mx-auto max-w-xl mb-10">
-                <vue-markdown>{{ data.intro }}</vue-markdown>
+                <vue-markdown v-interpolation :source="data.intro"></vue-markdown>
             </div>
             <template v-if="data.expands && data.expands.length > 0">                
                 <div v-for="section in data.expands" :key="section.title" class="mb-2">
@@ -11,7 +11,7 @@
                 </div>
             </template>
             <div v-if="data.outro" class="article mx-auto max-w-xl mt-10 mb-10">
-                <vue-markdown>{{ data.outro }}</vue-markdown>
+                <vue-markdown v-interpolation :source="data.outro"></vue-markdown>
             </div>
         </div>
     </section>

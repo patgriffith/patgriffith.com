@@ -1,6 +1,6 @@
 <template>
     <div>
-        <vue-markdown class="article" :source="content"></vue-markdown>
+        <vue-markdown v-interpolation class="article" :source="content"></vue-markdown>
     </div>
 </template>
 

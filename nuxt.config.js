@@ -73,6 +73,7 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
+    'nuxt-interpolation'
   ],
   netlifyFiles: {
     netlifyToml: {
