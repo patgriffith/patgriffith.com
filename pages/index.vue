@@ -18,7 +18,6 @@
     <Testimonial :data="$store.state.testimonials[0]"/>
     <HomeSection :data="sections('experience')"/>
     <Testimonial :data="$store.state.testimonials[1]"/>
-    <HomeSection :data="sections('pricing')"/>
     <HomeSection :data="sections('contact')"/>
     
   </div>
