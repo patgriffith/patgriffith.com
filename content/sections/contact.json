@@ -1,4 +1,14 @@
 {
-    "title": "Contact",
-    "intro": "Email [patrick.lorenzut@gmail.com](mailto:patrick.lorenzut@gmail.com) and let’s kickstart this party with a relaxed, noncommital chat!\n\nPortland, OR, USA is my home base. I’m happy to work on site here, or travel wherever. But I'm unwilling to move outside of Portland at this time. Because love."
-  }
+  "title": "Ready?",
+  "intro": "For contract work, I charge $140 per hour, after a free consultation. For w2 work, we can figure something out.\n\nEmail [patrick.lorenzut@gmail.com](mailto:patrick.lorenzut@gmail.com) and let’s kickstart this party with a relaxed, noncommital chat!",
+  "expands": [
+    {
+      "title": "Discounted and Pro bono work.",
+      "content": "Does your organization focus on justice (racial, climate, etc), health (physical, mental, etc), or any other project that is unambiguously good for humanity?\n\nAnd are you unable to pay my fee?\n\nIf you answered 'yes' to both questions... let's talk. I care about social impact far more than I care about money, and as such I'm happy to provide free or discounted services to good causes."
+    },
+    {
+      "title": "Working for equity.",
+      "content": "Under certain circumstances I’m quite jazzed to work for equity. And frankly, I find it a little suspicious that most won't. 'Cuz I’m a risk-tolerant guy with ultra low expenses and zero dependents. So there are only three reasons why I wouldn't accept equity.\n\n1. I don't believe in your project's mission.\n2. I don't believe in your project's ability to make money.\n3. I don't believe in you or your team.\n\nIn all three of those cases... I should say no to your project. Right?\n\nSo, yeah, I'm happy to put ~~my~~ your money where my mouth is. I want to be paid a minimum of **$2,500/month** in order to live comfortably, but am happy to accept some or all of the remaining payment in the form of equity."
+    }
+  ]
+}
