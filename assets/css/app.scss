@@ -47,12 +47,12 @@ body{
 @import 'header';
 @import 'collage';
 
+
 h2{
     span{
         background: linear-gradient(to right, $rainbow);	
         -webkit-background-clip: text;			
         -webkit-text-fill-color: transparent;
-        // display: block;
     }
 }
 
@@ -93,6 +93,12 @@ h2{
     a{
         @extend .link;
     }
+    h2{
+        @apply font-bold text-150 leading-1 text-purple-800 mb-4 mt-20;        
+    }
+    h3{
+        @apply font-bold text-100 mb-2 mt-5;
+    }
     .link{
         @extend a;
         cursor: pointer;
@@ -100,6 +106,10 @@ h2{
     .caption{
         font-size: .8em;
         @apply text-gray-600 mx-10 -mt-4 mb-10
+    }
+    hr{
+        margin-top: 2.4em;
+        margin-bottom: 2.4em;
     }
 }
 
