@@ -31,8 +31,8 @@ import ClickToExpand from '~/components/ClickToExpand.vue'
 export default {
   data(){
     return {
-      'h1': "Software Engineer Generalist Seeks Meaningful Work",
-      'h2': "Hey, I'm Patrick, a pragmatic egalitarian - and situational goofball - who likes to leverage his <a href='/#experience' class='link'>diverse tech skills</a> for social good. Please <a href='mailto:patrick.lorenzut@gmail.com' class='link'>email me</a> to see how I can help."
+      'h1': "Software Engineer <del>For Hire</del>",
+      'h2': "Hey, I'm Patrick, a pragmatic egalitarian - and situational goofball - who likes to leverage his <a href='/#experience' class='link'>diverse tech skills</a> for social good. This is the website I use to land new freelance work. But I'm not taking new clients right now, so... 🤷‍♂️"
     }
   },
   components: {
@@ -56,7 +56,7 @@ export default {
   },
   head() {
     return {      
-      title: 'Patrick Lorenzut: Silly Online Business Consultant'
+      title: 'Patrick Lorenzut: Giggly Software Engineer'
     };
   },
   mounted: function() {
