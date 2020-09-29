@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render <Footer/> without crashing 1`] = `
+<div>
+  <emailsignup-stub />
+   
+  <footer
+    class="bg-purple-800 mt-56"
+  >
+    <p
+      class="p-6 text-white text-center"
+    >
+      Copyright @2020 Patrick Lorenzut
+    </p>
+  </footer>
+   
+  <titletwister />
+   
+  <chatwidget />
+</div>
+`;

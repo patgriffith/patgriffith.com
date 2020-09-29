@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ClickToExpand /> should render <ClickToExpand/> without crashing 1`] = `
+<div
+  class="mx-auto max-w-xl"
+>
+  <div
+    class="max-w-md text-right mr-20 md:mr-0"
+  >
+    <img
+      alt="Click to expand."
+      class="inline-block mr-12 mt-4"
+      height="49"
+      src="/img/click-to-expand.png"
+      width="212"
+    />
+  </div>
+</div>
+`;
