@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render <Header/> without crashing 1`] = `
+<div
+  class="relative"
+  style="z-index: 10;"
+>
+  <div
+    id="rainbow"
+  />
+   
+  <div
+    id="collage-container"
+  >
+    <div
+      id="collage-images"
+    >
+      <img
+        id="fuck-columbus"
+        src="/img/values/fuck-columbus.png"
+      />
+       
+      <img
+        id="planned-parenthood"
+        src="/img/values/planned-parenthood.png"
+      />
+       
+      <img
+        id="team-everybody"
+        src="/img/values/team-everybody.png"
+      />
+       
+      <img
+        id="love-wins"
+        src="/img/values/love-wins.png"
+      />
+       
+      <img
+        id="black-lives-matter"
+        src="/img/values/black-lives-matter.png"
+      />
+       
+      <img
+        id="people-over-profit"
+        src="/img/values/people-over-profit.png"
+      />
+    </div>
+     
+    <img
+      id="face"
+      src="/img/patrick-lorenzut.png"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeSection /> should render <HomeSection/> without crashing 1`] = `
+<section
+  class="pt-24 md:pt-32 mt-8"
+  id=""
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"
+    >
+      <span>
+        
+      </span>
+    </h2>
+     
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</section>
+`;
+
+exports[`<HomeSection /> should render expandable sections 1`] = `
+<section
+  class="pt-24 md:pt-32 mt-8"
+  id=""
+>
+  <div
+    class="container"
+  >
+    <h2
+      class="mx-auto max-w-xl font-bold text-200 leading-1 text-purple-800 mb-4"
+    >
+      <span>
+        
+      </span>
+    </h2>
+     
+    <!---->
+     
+    <!---->
+     
+    <!---->
+  </div>
+</section>
+`;
