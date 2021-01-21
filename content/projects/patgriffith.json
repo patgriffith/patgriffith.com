@@ -1,16 +1,16 @@
 {
-    "title": "Lorenzut",
+    "title": "Pat Griffith",
     "subtitle": "A quirky site for finding meaningful work.",
     "description": "I just want to do something meaningful, pay my bills, and take care of my health all at the same time. Is that so much to ask?!?!?!?",
     "content": "",
     "links": [
         {
             "title": "Website",
-            "url": "https://lorenzut.com"
+            "url": "https://patgriffith.com"
         },
         {
             "title": "Source Code",
-            "url": "https://github.com/patricklorenzut/lorenzut-nuxt"
+            "url": "https://github.com/patricklorenzut/patgriffith.com"
         }
     ],
     "visible": true,

@@ -46,7 +46,7 @@ export default {
   },
   head() {
     return {
-      title: 'Patrick Lorenzut: Silly Online Business Consultant'
+      title: 'Words that Pat Griffith Wrote'
     };
   },
   mounted: function() {

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-body">
+  <div id="page-wrapper" class="font-body" :class="$route.name">
     <Header/>
     <Nav/>    
     <nuxt />

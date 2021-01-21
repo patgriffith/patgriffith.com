@@ -1,14 +1,14 @@
 {
-    "name": "Patrick Lorenzut",
-    "short_name": "Patrick Lorenzut",
+    "name": "Pat Griffith",
+    "short_name": "Pat Griffith",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
+            "src": "/fav/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-512x512.png",
+            "src": "/fav/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

@@ -151,3 +151,18 @@ h2{
         }
     }
 }
+
+.unicorn-hover {
+    &:hover {
+      > span {
+        display: block;
+      }
+    }
+  }
+
+.button {
+    @apply rounded-sm py-4 px-20 bg-green-600 font-bold text-white;
+    &:hover {
+        @apply bg-green-900;
+    }
+}

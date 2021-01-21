@@ -10,7 +10,7 @@
                 <img src="/img/values/black-lives-matter.png" id="black-lives-matter"/>
                 <img src="/img/values/people-over-profit.png" id="people-over-profit"/>
             </div>          
-            <img src="/img/patrick-lorenzut.png" id="face"/>  
+            <img src="/img/patgriffith.png" id="face"/>  
         </div>
     </div>
 </template>

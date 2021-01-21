@@ -1,5 +1,5 @@
 <template>
-    <header class="container max-w-5xl mt-20">
+    <header class="container max-w-5xl mt-20 lg:mt-32">
       <div class="text-center">
         <h1 class="text-purple-800 font-bold leading-1 text-200 md:text-300 mx-auto max-w-5xl" v-html="h1"></h1>
         <h2 v-if="h2" v-interpolation class="mt-6 text-110 max-w-4xl mx-auto article" v-html="h2"></h2>        
@@ -11,3 +11,10 @@ export default {
     props: ['h1', 'h2', 'project']
 }
 </script>
+<style lang="scss" scoped>
+#page-wrapper.hire {
+  h2 {
+    @apply max-w-3xl;
+  }
+}
+</style>

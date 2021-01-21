@@ -85,6 +85,18 @@ export default {
           from: '/resume',
           to: 'https://docs.google.com/document/d/1VP9QyA_wGLdSWg6rZHX0NoLZo8nrZv8Z0_QTN08ey5c/edit?usp=sharing',
           status: 301
+        },
+        {
+          from: 'http://lorenzut.com',
+          to: 'https://patgriffith.com',
+          status: 301,
+          force: true
+        },
+        {
+          from: 'https://lorenzut.com',
+          to: 'https://patgriffith.com',
+          status: 301,
+          force: true
         }
       ]
     }

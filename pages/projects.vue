@@ -13,7 +13,7 @@ export default {
   data(){
     return {
       'h1': 'Proof that I really am a web developer, designer, copywriter, and machine learning engineer.',
-      'h2': "Despite successfully starting and selling an online company in my younger years… I don’t currently have the emotional bandwidth (or the desire) to be a solo entrepreneur. But I do like to make stuff. Here are some of my solo projects:"
+      'h2': "I've ditched my scatterbrained affinity for frivolous side projects in the interest of building <a href='https://yaywork.com' target='_blank'>a real business that actually helps people</a>. That said, for the purposes of showing off some skillz, here are some of my projects from days past:"
     }
   },
   components: {
@@ -23,7 +23,7 @@ export default {
   },
   head() {
     return {
-      title: 'Websites that Patrick Lorenzut built.'
+      title: 'Websites that Pat Griffith built.'
     };
   }
 }

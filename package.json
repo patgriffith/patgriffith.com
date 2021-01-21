@@ -1,8 +1,8 @@
 {
-  "name": "lorenzut",
+  "name": "patgriffith",
   "version": "1.0.0",
-  "description": "Silly Online Business Consultant",
-  "author": "Patrick Lorenzut",
+  "description": "Software Engineer Unicorn",
+  "author": "Pat Griffith",
   "private": true,
   "scripts": {
     "dev": "nuxt",

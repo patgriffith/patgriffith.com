@@ -3,7 +3,12 @@
     
     <Title :h1="h1" :h2="h2" />
 
-    <section class="mt-20">
+    <div class="text-center mt-20">
+      <nuxt-link to="/#contact" class="button">Hire Me (for free)</nuxt-link>
+      <!-- <p class="mt-5 text-80 opacity-50">Or read on to see what I can do.</p> -->
+    </div>
+
+    <section class="mt-32">
         <div class="container text-center">
           <video autoplay loop muted class="mx-auto">
               <source src="/videos/waiting.mp4" type="video/mp4">
@@ -31,8 +36,8 @@ import ClickToExpand from '~/components/ClickToExpand.vue'
 export default {
   data(){
     return {
-      'h1': "Software Engineer <del>For Hire</del>",
-      'h2': "Hey, I'm Patrick, a pragmatic egalitarian - and situational goofball - who likes to leverage his <a href='/#experience' class='link'>diverse tech skills</a> for social good. This is the website I use to land new freelance work. But I'm not taking new clients right now, so... 🤷‍♂️"
+      'h1': 'Meet Pat: Semi-pro stripper, cashier, and software generalist.',
+      'h2': "Hey, I'm Pat, a pragmatic egalitarian and situational goofball with a thirst for existentialism and connection. I strip for the tomfoolery, sell groceries for the conversations, and co-operate <a href='https://yaywork.com'>Yay Work</a> to make an impact. I also do broad-spectrum contract work, ranging from Branding to Machine Learning Engineering."
     }
   },
   components: {
@@ -56,7 +61,7 @@ export default {
   },
   head() {
     return {      
-      title: 'Patrick Lorenzut: Giggly Software Engineer'
+      title: 'Pat Griffith: Software Engineer Unicorn'
     };
   },
   mounted: function() {
@@ -69,3 +74,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+h1 {
+  
+}
+</style>
