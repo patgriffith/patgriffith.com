@@ -36,8 +36,8 @@ import ClickToExpand from '~/components/ClickToExpand.vue'
 export default {
   data(){
     return {
-      'h1': 'Hire a complete software team (aka me) for $8,000 per month.',
-      'h2': "Hey, I'm Pat, a pragmatic egalitarian and situational goofball with a thirst for existentialism and connection. I do broad-spectrum software work, ranging from Branding to Machine Learning Engineering. Since you don’t trust me yet, how about we start with a free trial?"
+      'h1': 'What’s your problem?',
+      'h2': "With 10 years of software experience (from branding to machine learning) and 33 years of life experience (from selling a business to getting a divorce) I'm we'll positioned to solve a whole slew of problems. Is yours one of them? Email me and let's find out!"
     }
   },
   components: {

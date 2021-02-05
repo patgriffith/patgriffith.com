@@ -4,7 +4,7 @@
     <Title :h1="h1" :h2="h2" />
 
     <div class="text-center mt-20">
-      <a class="button" href="mailto:hey@patgriffith.com">Try me for free.</a>
+      <a class="button" href="mailto:mister@patgriffith.com">Try me for free.</a>
       <p class="mt-5 text-80">One-week free trial. Then $250+ per week.</p>
     </div>
 
