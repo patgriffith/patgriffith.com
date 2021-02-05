@@ -4,8 +4,8 @@
     <Title :h1="h1" :h2="h2" />
 
     <div class="text-center mt-20">
-      <nuxt-link to="/#contact" class="button">Hire Me (start for free)</nuxt-link>
-      <p class="mt-5 text-80 opacity-50">Or read on to see what I can do.</p>
+      <a href="https://calendly.com/misterpatgriffith/45" target="_blank" class="button">Schedule a free call</a>
+      <p class="mt-5 text-80 opacity-50">Or <a href="mailto:mister@patgriffith.com" class="underline">shoot me an email</a>.</p>
     </div>
 
     <section class="mt-32">
@@ -37,7 +37,7 @@ export default {
   data(){
     return {
       'h1': 'What’s your problem?',
-      'h2': "With 10 years of software experience (from branding to machine learning) and 33 years of life experience (from selling a business to getting a divorce) I'm we'll positioned to solve a whole slew of problems. Is yours one of them? Email me and let's find out!"
+      'h2': "With 10 years of software experience (from branding to machine learning) and 33 years of life experience (from selling a business to getting a divorce) I'm we'll positioned to solve a whole slew of problems. Is yours one of them? Let's find out!"
     }
   },
   components: {
